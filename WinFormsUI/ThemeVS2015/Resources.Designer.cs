@@ -63,6 +63,26 @@ namespace WeifenLuo.WinFormsUI.ThemeVS2015 {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] BasisEditorDark {
+            get {
+                object obj = ResourceManager.GetObject("BasisEditorDark", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] BasisEditorNormal {
+            get {
+                object obj = ResourceManager.GetObject("BasisEditorNormal", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] vs2015blue {
             get {
                 object obj = ResourceManager.GetObject("vs2015blue", resourceCulture);

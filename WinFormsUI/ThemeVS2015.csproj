@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WeifenLuo.WinFormsUI</RootNamespace>
-    <AssemblyName>WeifenLuo.WinFormsUI.Docking.ThemeVS2015</AssemblyName>
+    <AssemblyName>BasisEditorColorTheme</AssemblyName>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>dockpanelsuite.snk</AssemblyOriginatorKeyFile>
     <DelaySign>False</DelaySign>
@@ -80,6 +80,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="ThemeVS2013\VS2013WindowSplitterControlFactory.cs" />
+    <Compile Include="ThemeVS2015\BasisEditorDarkTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThemeVS2015\BasisEditorNormalTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ThemeVS2015\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -137,6 +143,8 @@
     <None Include="license.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="ThemeVS2015\Resources\BasisEditorDark.vstheme" />
+    <None Include="ThemeVS2015\Resources\BasisEditorNormal.vstheme" />
     <None Include="ThemeVS2015\Resources\VS2015blue.vstheme" />
     <None Include="ThemeVS2015\Resources\VS2015dark.vstheme" />
     <None Include="ThemeVS2015\Resources\VS2015light.vstheme" />

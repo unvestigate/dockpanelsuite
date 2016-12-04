@@ -1,0 +1,9 @@
+-The utility in VSColorThemeProcessor.zip can be used to create a theme based on the VS2015 dark theme, but with color modifications.
+-Eg. the "normal/default" editor theme is the dark theme but with all color components amped up by 25.
+-Modify the ProcessColor function to make the color modification you want. Then run the utility.
+-The output vstheme file needs to be moved into WinFormsUI\ThemeVS2015\Resources and added as a resource into the project (through Resources.resx).
+-If you want to make a completely new theme you also need to make a new theme class in WinFormsUI\ThemeVS2015 and have it refer to the resource.
+-The VSColorThemeProcessor will also output two colors (fore and background colors) that you need to set correctly in the theme class.
+-After that, build the ThemeVS2015 project and re-reference the output dll of if (BasisEditorColorTheme.dll) in the editor.
+-You should be able to refresh the toolbox in the editor project and have an instance of the new theme created in the main window.
+-Check the editor theme code window code for how to set the theme.

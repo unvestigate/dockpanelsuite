@@ -42,5 +42,19 @@ namespace WeifenLuo.WinFormsUI.ThemeVS2015
             PaintingService.CleanUp();
             base.CleanUp(dockPanel);
         }
+
+        // Basis additions:
+
+        public System.Drawing.Color BackgroundColor { get { return mBackgroundColor; } }
+        public System.Drawing.Color ForegroundColor { get { return mForegroundColor; } }
+        //public System.Drawing.Color BorderColor { get { return mBorderColor; } }
+        //public System.Drawing.Color TextColor { get { return mTextColor; } }
+
+        // ============================
+
+        protected System.Drawing.Color mBackgroundColor;
+        protected System.Drawing.Color mForegroundColor;
+        //protected System.Drawing.Color mBorderColor;
+        //protected System.Drawing.Color mTextColor;
     }
 }
