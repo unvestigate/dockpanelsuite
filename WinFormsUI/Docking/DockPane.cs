@@ -93,6 +93,7 @@ namespace WeifenLuo.WinFormsUI.Docking
             SetStyle(ControlStyles.Selectable, false);
 
             m_isFloat = (dockState == DockState.Float);
+            m_shouldShowAutoHide = true;
 
             m_contents = new DockContentCollection();
             m_displayingContents = new DockContentCollection(this);
@@ -849,6 +850,17 @@ namespace WeifenLuo.WinFormsUI.Docking
         public bool IsFloat
         {
             get { return m_isFloat; }
+        }
+
+        private bool m_shouldShowAutoHide;
+        public bool ShouldShowAutoHide
+        {
+            get { return m_shouldShowAutoHide; }
+            set
+            {
+                m_shouldShowAutoHide = value;
+                RefreshChanges();
+            }
         }
 
         public INestedPanesContainer NestedPanesContainer
